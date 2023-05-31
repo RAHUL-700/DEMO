@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.Twinlite.genericUtilities.ListenerImplimentations"></listener>
+</listeners>
+  <test  name="Test">
+    <classes>
+      <class name="com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot"/>
+      <class name="com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty"/>
+      <class name="com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty"/> 
+      <class name="com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint"/>
+      <class name="com.DDT.POM.MethodCalling.VerifyTheAdminCanSeeListOfUsersOnClickingRegisteredUsersButton"/>
+      <class name="com.DDT.POM.MethodCalling.VerifyThatAdminEditTheDetailsOfTheRegisteredProperty"/>
+      <class name="com.DDT.POM.MethodCalling.VerifyTheAdminCanSeeListOfApartmentDetailsOnClickingRoomsForRentButton"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

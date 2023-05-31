@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot">
+        <methods>
+          <include name="config_AS"/>
+          <include name="config_AC"/>
+          <include name="confi_BM"/>
+          <include name="main1"/>
+          <include name="Config_BS"/>
+          <include name="config_BC"/>
+          <include name="config_AM"/>
+        </methods>
+      </class> <!-- com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

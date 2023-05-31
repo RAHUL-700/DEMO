@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[property registered successfully]]>
+    </line>
+    <line>
+      <![CDATA[search page opened successfully]]>
+    </line>
+    <line>
+      <![CDATA[test case passed]]>
+    </line>
+    <line>
+      <![CDATA[complaint rised successfully]]>
+    </line>
+    <line>
+      <![CDATA[complaint rised successfully]]>
+    </line>
+  </reporter-output>
+  <suite name="Failed suite [Suite]" duration-ms="73145" started-at="2023-05-30T11:08:47 IST" finished-at="2023-05-30T11:10:00 IST">
+    <groups>
+      <group name="SmokeTest">
+        <method signature="VerifyRegisterPropertyisplayedOrNot.main1()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot@5c072e3f]" name="main1" class="com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot"/>
+        <method signature="VerifyThatAdminCanFileAComplaintForTheRegisteredProperty.main2()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty@16022d9d]" name="main2" class="com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty"/>
+      </group> <!-- SmokeTest -->
+      <group name="RegTest">
+        <method signature="VerifyThatUserCanEditTheRegisteredProperty.main4()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty@7ba18f1b]" name="main4" class="com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty"/>
+        <method signature="VerifyUserCanEditDetailsAndRiseComplaint.main7()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint@8b87145]" name="main7" class="com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint"/>
+      </group> <!-- RegTest -->
+    </groups>
+    <test name="Test1(failed)" duration-ms="22882" started-at="2023-05-30T11:08:47 IST" finished-at="2023-05-30T11:09:10 IST">
+      <class name="com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot">
+        <test-method status="PASS" signature="config_BC()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot@5c072e3f]" name="config_BC" is-config="true" duration-ms="4495" started-at="2023-05-30T11:08:47 IST" finished-at="2023-05-30T11:08:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BC -->
+        <test-method status="PASS" signature="confi_BM()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot@5c072e3f]" name="confi_BM" is-config="true" duration-ms="4136" started-at="2023-05-30T11:08:51 IST" finished-at="2023-05-30T11:08:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confi_BM -->
+        <test-method status="PASS" signature="main1()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot@5c072e3f]" name="main1" duration-ms="13610" started-at="2023-05-30T11:08:56 IST" finished-at="2023-05-30T11:09:09 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[property registered successfully]]>
+            </line>
+            <line>
+              <![CDATA[search page opened successfully]]>
+            </line>
+            <line>
+              <![CDATA[test case passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- main1 -->
+        <test-method status="PASS" signature="config_AC()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot@5c072e3f]" name="config_AC" is-config="true" duration-ms="610" started-at="2023-05-30T11:09:09 IST" finished-at="2023-05-30T11:09:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AC -->
+        <test-method status="PASS" signature="config_AM()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot@5c072e3f]" name="config_AM" is-config="true" duration-ms="0" started-at="2023-05-30T11:09:09 IST" finished-at="2023-05-30T11:09:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+      </class> <!-- com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot -->
+    </test> <!-- Test1(failed) -->
+    <test name="Test2(failed)" duration-ms="15542" started-at="2023-05-30T11:09:10 IST" finished-at="2023-05-30T11:09:25 IST">
+      <class name="com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty">
+        <test-method status="PASS" signature="config_BC()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty@16022d9d]" name="config_BC" is-config="true" duration-ms="2427" started-at="2023-05-30T11:09:10 IST" finished-at="2023-05-30T11:09:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BC -->
+        <test-method status="PASS" signature="confi_BM()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty@16022d9d]" name="confi_BM" is-config="true" duration-ms="3671" started-at="2023-05-30T11:09:12 IST" finished-at="2023-05-30T11:09:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confi_BM -->
+        <test-method status="PASS" signature="main2()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty@16022d9d]" name="main2" duration-ms="8815" started-at="2023-05-30T11:09:16 IST" finished-at="2023-05-30T11:09:25 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[complaint rised successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- main2 -->
+        <test-method status="PASS" signature="config_AC()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty@16022d9d]" name="config_AC" is-config="true" duration-ms="621" started-at="2023-05-30T11:09:25 IST" finished-at="2023-05-30T11:09:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AC -->
+        <test-method status="PASS" signature="config_AM()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty@16022d9d]" name="config_AM" is-config="true" duration-ms="0" started-at="2023-05-30T11:09:25 IST" finished-at="2023-05-30T11:09:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+      </class> <!-- com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty -->
+    </test> <!-- Test2(failed) -->
+    <test name="Test4(failed)" duration-ms="16962" started-at="2023-05-30T11:09:25 IST" finished-at="2023-05-30T11:09:42 IST">
+      <class name="com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty">
+        <test-method status="PASS" signature="config_BC()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty@7ba18f1b]" name="config_BC" is-config="true" duration-ms="1957" started-at="2023-05-30T11:09:25 IST" finished-at="2023-05-30T11:09:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BC -->
+        <test-method status="PASS" signature="confi_BM()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty@7ba18f1b]" name="confi_BM" is-config="true" duration-ms="3729" started-at="2023-05-30T11:09:27 IST" finished-at="2023-05-30T11:09:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confi_BM -->
+        <test-method status="PASS" signature="main4()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty@7ba18f1b]" name="main4" duration-ms="10653" started-at="2023-05-30T11:09:31 IST" finished-at="2023-05-30T11:09:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main4 -->
+        <test-method status="PASS" signature="config_AC()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty@7ba18f1b]" name="config_AC" is-config="true" duration-ms="623" started-at="2023-05-30T11:09:42 IST" finished-at="2023-05-30T11:09:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AC -->
+        <test-method status="PASS" signature="config_AM()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty@7ba18f1b]" name="config_AM" is-config="true" duration-ms="0" started-at="2023-05-30T11:09:42 IST" finished-at="2023-05-30T11:09:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+      </class> <!-- com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty -->
+    </test> <!-- Test4(failed) -->
+    <test name="Test5(failed)" duration-ms="17728" started-at="2023-05-30T11:09:42 IST" finished-at="2023-05-30T11:10:00 IST">
+      <class name="com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint">
+        <test-method status="PASS" signature="Config_BS()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint@8b87145]" name="Config_BS" is-config="true" duration-ms="0" started-at="2023-05-30T11:08:47 IST" finished-at="2023-05-30T11:08:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Config_BS -->
+        <test-method status="PASS" signature="config_BC()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint@8b87145]" name="config_BC" is-config="true" duration-ms="2458" started-at="2023-05-30T11:09:42 IST" finished-at="2023-05-30T11:09:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BC -->
+        <test-method status="PASS" signature="confi_BM()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint@8b87145]" name="confi_BM" is-config="true" duration-ms="3248" started-at="2023-05-30T11:09:45 IST" finished-at="2023-05-30T11:09:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confi_BM -->
+        <test-method status="PASS" signature="main7()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint@8b87145]" name="main7" duration-ms="11400" started-at="2023-05-30T11:09:48 IST" finished-at="2023-05-30T11:09:59 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[complaint rised successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- main7 -->
+        <test-method status="PASS" signature="config_AC()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint@8b87145]" name="config_AC" is-config="true" duration-ms="622" started-at="2023-05-30T11:09:59 IST" finished-at="2023-05-30T11:10:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AC -->
+        <test-method status="PASS" signature="config_AM()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint@8b87145]" name="config_AM" is-config="true" duration-ms="0" started-at="2023-05-30T11:09:59 IST" finished-at="2023-05-30T11:09:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+        <test-method status="PASS" signature="config_AS()[pri:0, instance:com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint@8b87145]" name="config_AS" is-config="true" duration-ms="0" started-at="2023-05-30T11:10:00 IST" finished-at="2023-05-30T11:10:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AS -->
+      </class> <!-- com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint -->
+    </test> <!-- Test5(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
+</testng-results>

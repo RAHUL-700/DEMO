@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="5" name="Test1(failed)" parallel="classes">
+    <classes>
+      <class name="com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot">
+        <methods>
+          <include name="config_AS"/>
+          <include name="confi_BM"/>
+          <include name="config_AC"/>
+          <include name="main1"/>
+          <include name="Config_BS"/>
+          <include name="config_BC"/>
+          <include name="config_AM"/>
+        </methods>
+      </class> <!-- com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)" parallel="classes">
+    <classes>
+      <class name="com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty">
+        <methods>
+          <include name="config_AS"/>
+          <include name="confi_BM"/>
+          <include name="config_AC"/>
+          <include name="main2"/>
+          <include name="Config_BS"/>
+          <include name="config_BC"/>
+          <include name="config_AM"/>
+        </methods>
+      </class> <!-- com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test4(failed)" parallel="classes">
+    <classes>
+      <class name="com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty">
+        <methods>
+          <include name="config_AS"/>
+          <include name="confi_BM"/>
+          <include name="config_AC"/>
+          <include name="main4"/>
+          <include name="Config_BS"/>
+          <include name="config_BC"/>
+          <include name="config_AM"/>
+        </methods>
+      </class> <!-- com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+  <test thread-count="5" name="Test5(failed)" parallel="classes">
+    <classes>
+      <class name="com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint">
+        <methods>
+          <include name="config_AS"/>
+          <include name="confi_BM"/>
+          <include name="config_AC"/>
+          <include name="Config_BS"/>
+          <include name="main7"/>
+          <include name="config_BC"/>
+          <include name="config_AM"/>
+        </methods>
+      </class> <!-- com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint -->
+    </classes>
+  </test> <!-- Test5(failed) -->
+</suite> <!-- Failed suite [Suite] -->

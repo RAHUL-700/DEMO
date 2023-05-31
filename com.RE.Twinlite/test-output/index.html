@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Failed_suite__Suite_">
+              <span class="suite-name border-passed">Failed suite [Suite]</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Failed_suite__Suite_">
+                    <span>C:\Users\satya\OneDrive\Desktop\selenium programs\com.RE.Twinlite\test-output\testng-failed.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Failed_suite__Suite_">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Failed_suite__Suite_">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Failed_suite__Suite_">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Failed_suite__Suite_">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Failed_suite__Suite_">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Failed_suite__Suite_">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Failed_suite__Suite_" class="hide-methods passed suite-Failed_suite__Suite_"> (hide)</a> <!-- hide-methods passed suite-Failed_suite__Suite_ -->
+                      <a href="#" panel-name="suite-Failed_suite__Suite_" class="show-methods passed suite-Failed_suite__Suite_"> (show)</a> <!-- show-methods passed suite-Failed_suite__Suite_ -->
+                    </span>
+                    <div class="method-list-content passed suite-Failed_suite__Suite_">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Suite_" title="com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot" hash-for-method="main1">main1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Suite_" title="com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty" hash-for-method="main2">main2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Suite_" title="com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty" hash-for-method="main4">main4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite__Suite_" title="com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint" hash-for-method="main7">main7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Failed_suite__Suite_ -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Failed_suite__Suite_" class="panel Failed_suite__Suite_">
+          <div class="suite-Failed_suite__Suite_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="main2">
+                  </a> <!-- main2 -->
+                  <span class="method-name">main2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__Suite_-class-passed -->
+          <div class="suite-Failed_suite__Suite_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="main7">
+                  </a> <!-- main7 -->
+                  <span class="method-name">main7</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__Suite_-class-passed -->
+          <div class="suite-Failed_suite__Suite_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="main4">
+                  </a> <!-- main4 -->
+                  <span class="method-name">main4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__Suite_-class-passed -->
+          <div class="suite-Failed_suite__Suite_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="main1">
+                  </a> <!-- main1 -->
+                  <span class="method-name">main1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__Suite_-class-passed -->
+        </div> <!-- panel Failed_suite__Suite_ -->
+        <div panel-name="test-xml-Failed_suite__Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\satya\OneDrive\Desktop\selenium programs\com.RE.Twinlite\test-output\testng-failed.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Failed suite [Suite]&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1(failed)&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;config_AS&quot;/&gt;
+          &lt;include name=&quot;confi_BM&quot;/&gt;
+          &lt;include name=&quot;config_AC&quot;/&gt;
+          &lt;include name=&quot;main1&quot;/&gt;
+          &lt;include name=&quot;Config_BS&quot;/&gt;
+          &lt;include name=&quot;config_BC&quot;/&gt;
+          &lt;include name=&quot;config_AM&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1(failed) --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test2(failed)&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;config_AS&quot;/&gt;
+          &lt;include name=&quot;confi_BM&quot;/&gt;
+          &lt;include name=&quot;config_AC&quot;/&gt;
+          &lt;include name=&quot;main2&quot;/&gt;
+          &lt;include name=&quot;Config_BS&quot;/&gt;
+          &lt;include name=&quot;config_BC&quot;/&gt;
+          &lt;include name=&quot;config_AM&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2(failed) --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test4(failed)&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;config_AS&quot;/&gt;
+          &lt;include name=&quot;confi_BM&quot;/&gt;
+          &lt;include name=&quot;config_AC&quot;/&gt;
+          &lt;include name=&quot;main4&quot;/&gt;
+          &lt;include name=&quot;Config_BS&quot;/&gt;
+          &lt;include name=&quot;config_BC&quot;/&gt;
+          &lt;include name=&quot;config_AM&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test4(failed) --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test5(failed)&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;config_AS&quot;/&gt;
+          &lt;include name=&quot;confi_BM&quot;/&gt;
+          &lt;include name=&quot;config_AC&quot;/&gt;
+          &lt;include name=&quot;Config_BS&quot;/&gt;
+          &lt;include name=&quot;main7&quot;/&gt;
+          &lt;include name=&quot;config_BC&quot;/&gt;
+          &lt;include name=&quot;config_AM&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test5(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Failed suite [Suite] --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Failed_suite__Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Failed suite [Suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test1(failed) (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2(failed) (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test4(failed) (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test5(failed) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Failed_suite__Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Failed suite [Suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">RegTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">main4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">main7</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">SmokeTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">main1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">main2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Failed_suite__Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Failed suite [Suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Failed_suite__Suite_');
+function tableData_Failed_suite__Suite_() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'main1')
+data.setCell(0, 2, 'com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot')
+data.setCell(0, 3, 13610);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'main7')
+data.setCell(1, 2, 'com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint')
+data.setCell(1, 3, 11400);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'main4')
+data.setCell(2, 2, 'com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty')
+data.setCell(2, 3, 10653);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'main2')
+data.setCell(3, 2, 'com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty')
+data.setCell(3, 3, 8815);
+window.suiteTableData['Failed_suite__Suite_']= { tableData: data, tableDiv: 'times-div-Failed_suite__Suite_'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <div id="times-div-Failed_suite__Suite_">
+              </div> <!-- times-div-Failed_suite__Suite_ -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Failed_suite__Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Failed suite [Suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">main1</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">property registered successfully</span>
+                <span class="reporter-method-output">search page opened successfully</span>
+                <span class="reporter-method-output">test case passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">main2</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">complaint rised successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">main7</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">complaint rised successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Failed_suite__Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Failed_suite__Suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">Config_BS</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DDT.POM.MethodCalling.VerifyRegisterPropertyisplayedOrNot</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">config_BC</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">confi_BM</span>
+                <span class="method-start">4526 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">main1</span>
+                <span class="method-start">8662 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">config_AC</span>
+                <span class="method-start">22272 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">config_AM</span>
+                <span class="method-start">22272 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DDT.POM.MethodCalling.VerifyThatAdminCanFileAComplaintForTheRegisteredProperty</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">config_BC</span>
+                <span class="method-start">22913 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">confi_BM</span>
+                <span class="method-start">25340 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">main2</span>
+                <span class="method-start">29011 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">config_AC</span>
+                <span class="method-start">37834 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">config_AM</span>
+                <span class="method-start">37834 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DDT.POM.MethodCalling.VerifyThatUserCanEditTheRegisteredProperty</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">config_BC</span>
+                <span class="method-start">38455 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">confi_BM</span>
+                <span class="method-start">40412 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">main4</span>
+                <span class="method-start">44141 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">config_AC</span>
+                <span class="method-start">54794 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">config_AM</span>
+                <span class="method-start">54794 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DDT.POM.MethodCalling.VerifyUserCanEditDetailsAndRiseComplaint</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">config_BC</span>
+                <span class="method-start">55417 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">confi_BM</span>
+                <span class="method-start">57875 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">main7</span>
+                <span class="method-start">61123 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">config_AC</span>
+                <span class="method-start">72523 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">config_AM</span>
+                <span class="method-start">72523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">config_AS</span>
+                <span class="method-start">73145 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
