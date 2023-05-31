@@ -27,7 +27,7 @@ import com.Twinlite.genericUtilities.JavaUtilities;
 //@Listeners(com.Twinlite.genericUtilities.ListenerImplimentations.class)//or <listener> in suit file
 public class VerifyRegisterPropertyisplayedOrNot extends BaseClass{
 
-	
+	//ECLIPSE ONE PULL REQ
 	@Test(groups= {"SmokeTest"},retryAnalyzer=com.Twinlite.genericUtilities.RetryAnalyser.class)
 	public static void main1() throws InterruptedException, IOException {
 		
