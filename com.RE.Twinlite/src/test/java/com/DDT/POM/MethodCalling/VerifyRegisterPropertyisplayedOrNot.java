@@ -115,6 +115,7 @@ public class VerifyRegisterPropertyisplayedOrNot extends BaseClass{
 		 Assert.assertTrue(mobileNo.contains(mobile),"pass");
 		Reporter.log("test case passed",true);
 		System.out.println("VerifyRegisterPropertyisplayedOrNot passed(1)");//THANK YOU
+		//HELLO EVERYONE
 	}}
 
 
