@@ -34,7 +34,7 @@ import com.Twinlite.genericUtilities.WebDriverUtilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class VerifyTheAdminCanSeeListOfUsersOnClickingRegisteredUsersButton extends BaseClass{
+public class VerifyTheAdminCanSeeListOfUsersOnClickingRegisteredUsersButtonTest extends BaseClass{
 
 	@Test(groups= {"RegTest"},retryAnalyzer=com.Twinlite.genericUtilities.RetryAnalyser.class)
 	public  void main6() throws InterruptedException, EncryptedDocumentException, IOException {

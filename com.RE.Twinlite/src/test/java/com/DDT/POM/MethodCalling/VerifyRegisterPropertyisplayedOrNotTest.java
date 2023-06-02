@@ -1,58 +1,57 @@
 package com.DDT.POM.MethodCalling;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
-import java.util.Random;
+import java.util.List;
 
-import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.RE.Twinlite.ObjectRepository.AdminandUserComplaintPage;
 import com.RE.Twinlite.ObjectRepository.HomePage;
-import com.RE.Twinlite.ObjectRepository.LoginPage;
-import com.RE.Twinlite.ObjectRepository.RegisterUserPage;
-import com.RE.Twinlite.ObjectRepository.UserDetails_UpdatePage;
+import com.RE.Twinlite.ObjectRepository.SearchPage;
 import com.RE.Twinlite.ObjectRepository.UserLoginHome;
 import com.RE.Twinlite.ObjectRepository.UserRegisterRoomsPage;
 import com.Twinlite.genericUtilities.BaseClass;
 import com.Twinlite.genericUtilities.ExcelUtilities;
 import com.Twinlite.genericUtilities.FileUtilities;
 import com.Twinlite.genericUtilities.JavaUtilities;
-import com.Twinlite.genericUtilities.WebDriverUtilities;
+//@Listeners(com.Twinlite.genericUtilities.ListenerImplimentations.class)//or <listener> in suit file
+public class VerifyRegisterPropertyisplayedOrNotTest extends BaseClass{
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-public class VerifyThatAdminCanFileAComplaintForTheRegisteredProperty extends BaseClass{
-
-	int ranNo=jus.getRandomNumber();
-	
+	//ECLIPSE ONE PULL REQ
 	@Test(groups= {"SmokeTest"},retryAnalyzer=com.Twinlite.genericUtilities.RetryAnalyser.class)
-	public  void main2() throws InterruptedException, IOException {
-
+	public static void main1() throws InterruptedException, IOException {
 		
+		//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
+		//https://github.com/RAHUL-700/TEAM-B-SDET48.git
+		//https://github.com/RAHUL-700/TEAM-B-SDET48/tree/master
+		
+		JavaUtilities jus=new JavaUtilities();
+		 FileUtilities fus = new FileUtilities(); 
+		 ExcelUtilities eus = new ExcelUtilities();
+		
+	
 		//generate random numbers
 		int ranNo=jus.getRandomNumber();
-		String usn=fLib.getPropertyKeyValue("username");
-		String pwd=fLib.getPropertyKeyValue("password");
+		
+		
+		//fetching data from excel file for user registration 
 		String fullname =eus.getExcelData("LoginAdmin", 1, 1);
 		String username1 =eus.getExcelData("LoginAdmin", 2, 1);
 		String mobile =eus.getExcelData("LoginAdmin", 3, 1)+ranNo;
         String email =	ranNo+eus.getExcelData("LoginAdmin", 4, 1);	
         String password1 =eus.getExcelData("LoginAdmin", 5, 1);		
         String c_password =	eus.getExcelData("LoginAdmin", 6, 1);
+    
+        
 		
 		//fetching data for registering property using excel file
 		String alternat_mobile =	eus.getExcelData("LoginAdmin", 19, 1)+ranNo;
@@ -68,48 +67,55 @@ public class VerifyThatAdminCanFileAComplaintForTheRegisteredProperty extends Ba
 		String landmark =	eus.getExcelData("LoginAdmin", 30, 1);
 		String address =	eus.getExcelData("LoginAdmin", 31, 1);
 		
-		
 		//registering a property into the application
-		
 		UserLoginHome userloginhome=new UserLoginHome(driver);
 		userloginhome.getRegisterBtn().click();
 		
+		
+		
 		UserRegisterRoomsPage registerRoomsPage=new UserRegisterRoomsPage(driver);
-		//registering the room into the application using methods from pom class
+		//using generic method to register the room in to the application
 		registerRoomsPage.registerRoomsInToApp( fullname,  alternat_mobile,  mobile,  email, plotNo, rooms,country,state,city,rent,deposit ,accommodation, description,landmark,address);
 		UserRegisterRoomsPage urrup=new UserRegisterRoomsPage(driver);
         String Successmsg=urrup.getSuccessText().getText();
-		
-      UserLoginHome userLoginHome = new UserLoginHome(driver);
-      //clicking on logout button 
-      userLoginHome.getLogoutBtn().click();
-		
-		//first log in as admin 
-      HomePage hp = new HomePage(driver);
-      hp.getLoginbtn().click();
-String adminusn = eus.getExcelData("LoginAdmin", 13, 1);
-String adminpwd = eus.getExcelData("LoginAdmin", 14, 1);
 
-//log in to app as admin using method from pom classes
-LoginPage lp=new LoginPage(driver);
-lp.loginAsUser(adminusn, adminpwd);
-
-		//rising a complaint
-//clicking on deatils/Update button
-UserLoginHome ulh=new UserLoginHome(driver);
-ulh.getDetailsBtn().click();
-UserDetails_UpdatePage userDetails_UpdatePage=new UserDetails_UpdatePage(driver);
-//clicking on complaint button
-userDetails_UpdatePage.getComplaintBtn().click();
+		Assert.assertTrue(Successmsg.contains("Registration successfull"),"property registration not successfull");
 		
-		String compname =eus.getExcelData("LoginAdmin", 38, 1)+ranNo;
-		String complaint =eus.getExcelData("LoginAdmin", 39, 1)+ranNo;
-
-		AdminandUserComplaintPage adminandUserComplaintPage=new AdminandUserComplaintPage(driver);
-		//raising a complaint using a method from pom class and verifying the complaint
-		adminandUserComplaintPage.risingAComplaint(complaint,compname);
-		System.out.println("VerifyThatAdminCanFileAComplaintForTheRegisteredProperty passed(2)");
+		Reporter.log("property registered successfully",true);
 		
-	}
+		//logout as user
+		UserLoginHome userLoginHome=new UserLoginHome(driver);
+		userLoginHome.getLogoutBtn().click();
+		
+		
+		//Assert.fail();
 
-}
+		//searching the property in the welcome page of the application
+		String SearchKey =	eus.getExcelData("LoginAdmin", 44, 1);
+		String searchCity =	eus.getExcelData("LoginAdmin", 45, 1);
+		
+		//click on search button in the welcome page
+		 HomePage hp = new HomePage(driver);
+		hp.getSearchbtn().click();
+		Reporter.log("search page opened successfully",true);
+		
+		SearchPage searchPage=new SearchPage(driver);
+		searchPage.searchTheProperty( SearchKey,  searchCity);
+		
+		//verify if the registered property is displayed
+		List<WebElement> ownersList = searchPage.getOwnerList();
+		boolean flag=false;
+		String mobileNo=null;
+		for(WebElement mob:ownersList) 
+		{
+			 mobileNo = mob.getText();
+			if(mobileNo.contains(mobile))
+				break;
+		}
+		 Assert.assertTrue(mobileNo.contains(mobile),"pass");
+		Reporter.log("test case passed",true);
+		System.out.println("VerifyRegisterPropertyisplayedOrNot passed(1)");//THANK YOU
+		//HELLO EVERYONE
+	}}
+
+

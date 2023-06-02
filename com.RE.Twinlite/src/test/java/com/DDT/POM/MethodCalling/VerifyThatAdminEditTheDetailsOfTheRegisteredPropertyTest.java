@@ -23,7 +23,7 @@ import com.Twinlite.genericUtilities.WebDriverUtilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-public class VerifyThatAdminEditTheDetailsOfTheRegisteredProperty extends BaseClass{
+public class VerifyThatAdminEditTheDetailsOfTheRegisteredPropertyTest extends BaseClass{
 
 	@Test(groups= {"SmokeTest"},retryAnalyzer=com.Twinlite.genericUtilities.RetryAnalyser.class)
 	public  void main3() throws InterruptedException, IOException {
