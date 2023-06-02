@@ -35,7 +35,7 @@ public class VerifyRegisterPropertyisplayedOrNotTest extends BaseClass{
 		//https://github.com/RAHUL-700/TEAM-B-SDET48.git
 		//https://github.com/RAHUL-700/TEAM-B-SDET48/tree/master
 		
-		JavaUtilities jus=new JavaUtilities();//hi
+		JavaUtilities jus=new JavaUtilities();//hihello
 		 FileUtilities fus = new FileUtilities(); 
 		 ExcelUtilities eus = new ExcelUtilities();
 		
