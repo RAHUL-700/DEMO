@@ -37,6 +37,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		public void Config_BS() throws Throwable
 		{
 			//dLib.connectToDb();
+			Thread.sleep(2500);
 			System.out.println("-- connect to DB---");
 		}
 		
