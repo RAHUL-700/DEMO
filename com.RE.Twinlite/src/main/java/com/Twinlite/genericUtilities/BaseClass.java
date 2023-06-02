@@ -38,8 +38,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		{
 			//dLib.connectToDb();
 
-			//Thread.sleep(2500);
-			Thread.sleep(5000);
+			Thread.sleep(60000);
+			//Thread.sleep(5000);
 			System.out.println("-- connect to DB---");
 		}
 		
