@@ -40,6 +40,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 			//Thread.sleep(60000);
 			//Thread.sleep(5000);
+			//ji
 			System.out.println("-- connect to DB---");
 		}
 		
