@@ -38,7 +38,7 @@ import com.Twinlite.genericUtilities.WebDriverUtilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class VerifyTheAdminCanSeeListOfApartmentDetailsOnClickingRoomsForRentButton extends BaseClass{
+public class VerifyTheAdminCanSeeListOfApartmentDetailsOnClickingRoomsForRentButtonTest extends BaseClass{
 
 	@Test(groups= {"RegTest"},retryAnalyzer=com.Twinlite.genericUtilities.RetryAnalyser.class)
 	public  void main5() throws InterruptedException, EncryptedDocumentException, IOException {
