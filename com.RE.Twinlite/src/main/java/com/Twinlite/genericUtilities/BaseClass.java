@@ -38,7 +38,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		{
 			//dLib.connectToDb();
 
-			Thread.sleep(60000);
+			
 			//Thread.sleep(5000);
 			//ji
 			System.out.println("-- connect to DB---");
@@ -66,6 +66,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 			String URL = fLib.getPropertyKeyValue("url");
 			driver.get(URL);
 			wLib.maximizeWindow(driver);
+			Thread.sleep(60000);
 			wLib.waitTillPageGetsLoaded(driver);
 			System.out.println("-- browser opened successfully---");
 		}
