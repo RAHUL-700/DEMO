@@ -67,7 +67,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 			driver.get(URL);
 			wLib.maximizeWindow(driver);
 			Thread.sleep(60000);
-			wLib.waitTillPageGetsLoaded(driver);
+			//wLib.waitTillPageGetsLoaded(driver);
 			System.out.println("-- browser opened successfully---");
 		}
 		
